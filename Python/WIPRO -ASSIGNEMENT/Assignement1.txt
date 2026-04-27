@@ -1,0 +1,256 @@
+P1: Write a program that asks the user for their age and checks if they are eligible to vote (18 years and older). Print a message based on their eligibility.
+
+
+age = int(input("Please enter your age: "))
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+    
+
+
+output:
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/Program 1.py"
+Please enter your age: 18
+You are eligible to vote.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P2: Write a program that takes a year as input and checks if it is a leap year or not.
+Print the result.
+
+year = int(input("Please enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/Program2.py"
+Please enter a year: 2003  
+2003 is not a leap year.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P3:  Write a program that takes a number as input and checks if it is divisible by 5.
+Print a message if it is divisible or not.
+
+
+
+number = int(input("Please enter a number: "))
+if number % 5 == 0:
+    print(f"{number} is divisible by 5.")
+else:
+    print(f"{number} is not divisible by 5.")
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/Program3.py"
+Please enter a number: 13
+13 is not divisible by 5.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P4: Write a program that takes a character as input and checks if it is a vowel or
+consonant. Print the result.
+
+char = input("Please enter a character: ").lower()
+if char in 'aeiou':
+    print(f"{char} is a vowel.")
+elif char.isalpha():
+    print(f"{char} is a consonant.")
+else:
+    print("Please enter a valid alphabet character.")
+
+output:
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/Program4.py"
+Please enter a character: l
+l is a consonant.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P5: Write a program that takes a password as input and checks if it is strong (at least
+8 characters). Print a message based on the result
+
+password = input("Please enter a password: ")
+if len(password) >= 8:
+    print("Your password is strong.")
+else:
+    print("Your password is weak. It should be at least 8 characters long.")
+
+output:
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P5.py"
+Please enter a password: Vein@9191@#
+Your password is strong.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P6: Write a program that takes a grade (A, B, C, D, F) as input and uses match-case
+to print a message corresponding to the grade (e.g., "Excellent" for A, "Good" for
+B, etc.).
+
+
+
+grade = input("Please enter a grade (A, B, C, D, F): ").upper()
+match grade:
+    case 'A':
+        print("Excellent")
+    case 'B':
+        print("Good")
+    case 'C':
+        print("Average")
+    case 'D':
+        print("Below Average")
+    case 'F':
+        print("Fail")
+    case _:
+        print("Invalid grade. Please enter A, B, C, D, or F.")
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P6.py"
+Please enter a grade (A, B, C, D, F): D
+Below Average
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P6.py"
+Please enter a grade (A, B, C, D, F): B
+Good
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P7: Write a program that takes a traffic light color (Red, Yellow, Green) as input and
+uses match-case to print the corresponding action (e.g., "Stop" for Red, "Wait"
+for Yellow, etc.).
+
+light_color = input("Please enter a traffic light color: ").capitalize()
+match light_color:
+    case 'Red':
+        print("Stop")
+    case 'Yellow':  
+        print("Wait")
+    case 'Green':
+        print("Go")
+    case _:
+        print("Invalid traffic light color. Please enter Red, Yellow, or Green.")
+
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P7.py"
+Please enter a traffic light color: Green
+Go
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P8: Write a program that takes a number as input and uses a for loop to calculate its
+factorial. Print the result.
+
+
+number = int(input("Please enter a number: "))
+factorial = 1
+for i in range(1, number + 1):
+    factorial *= i
+print(f"The factorial of {number} is {factorial}.") 
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P8.py"
+Please enter a number: 13
+The factorial of 13 is 6227020800.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P9: Write a program that uses a for loop to print all even numbers between 1 and 20
+
+for num in range(1, 21):
+    if num % 2 == 0:
+        print(num)
+        
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P9.py"
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P10: Write a program that uses a while loop to create a countdown timer from 10 to 0.
+Print each number.
+
+
+countdown = 10
+while countdown >= 0:               
+    print(countdown)
+    countdown -= 1
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P10.py"
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P11:  Write a program that uses a for loop to count the number of vowels in a given
+string. Print the count.
+
+
+string = input("Please enter a string: ")
+vowel_count = 0
+for char in string.lower():
+    if char in 'aeiou':
+        vowel_count += 1
+print(f"The number of vowels in the string is: {vowel_count}.")
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P11.py"
+Please enter a string: Love Khanna
+The number of vowels in the string is: 4.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P12: Write a program that uses a for loop to print numbers from 1 to 10, but skips
+printing the number 5 (use continue) and stops the loop if the number 8 is
+reached (use break).
+
+
+for num in range(1, 11):
+    if num == 5:
+        continue
+    if num == 8:
+        break
+    print(num)
+
+output:
+
+c:/Users/Love Khanna/Desktop/Wipro_Assignement_1/P12.py"
+1
+2
+3
+4
+6
+7
+
